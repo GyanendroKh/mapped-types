@@ -1,10 +1,10 @@
-import { Type } from '@nestjs/common';
 import { MappedType } from './mapped-type.interface';
 import {
   inheritPropertyInitializers,
   inheritTransformationMetadata,
   inheritValidationMetadata,
 } from './type-helpers.utils';
+import { Type } from './type.interface';
 
 export function IntersectionType<A, B>(
   target: Type<A>,
